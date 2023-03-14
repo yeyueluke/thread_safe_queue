@@ -19,7 +19,7 @@ int main() {
 	});
   
 	td01.join();
-	td02.join();
+	td02.join();// if use detach() wont get all output
 	std::cout << "myQueue, size: " << myQueue.size() << std::endl;
 	size_t myQueueLen = myQueue.size();
 	for (size_t i = 0; i < myQueueLen; i++) {
