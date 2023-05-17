@@ -26,14 +26,14 @@ int main() {
 		std::cout << myQueue.wait_and_pop() << " size: " << myQueue.size() << std::endl;
 	}
 	#if 0  //// if use detach() 
-	while(ture) {
+	while(true) {
 		if(!myQueue.empty()) {
 		    std::cout << myQueue.wait_and_pop() << " size: " << myQueue.size() << std::endl;
 		} else {
-			break;
+		    break;
 		}
 	}
 	#endif
 	std::getchar();
-  return 0;
+    return 0;
 }
