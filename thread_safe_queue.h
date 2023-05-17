@@ -7,13 +7,11 @@
 #include "disable_copy.h"
 
 namespace RGR {
-
 	/*
 	* 线程安全队列
 	* T为队列元素类型
 	* 因为有std::mutex和std::condition_variable类成员，所以此类不支持复制构造函数
 	*/
-
 	template<typename T>
 	class threadsafe_queue //: private disable_copy {
 	private:
