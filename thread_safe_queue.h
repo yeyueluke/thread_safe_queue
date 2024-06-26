@@ -13,7 +13,7 @@ namespace RGR {
 	* 因为有std::mutex和std::condition_variable类成员，所以此类不支持复制构造函数
 	*/
 	template<typename T>
-	class threadsafe_queue //: private disable_copy {
+	class threadsafe_queue { //: private disable_copy {
 	private:
 		mutable std::mutex m_data_mutex;
 		mutable std::condition_variable m_data_cond;
